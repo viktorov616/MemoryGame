@@ -1,0 +1,20 @@
+.animation {
+  &-slide-enter {
+    left: -80% !important;
+  }
+  &-slide-enter-active {
+    left: 0 !important;
+
+    transition: .5s ease-in all;
+  }
+
+  &-slide-leave {
+    left: 0 !important;
+  }
+
+  &-slide-leave-active {
+    left: -80% !important;
+
+    transition: .3s ease-out all;
+  }
+}

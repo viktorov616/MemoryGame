@@ -1,0 +1,83 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24%;
+  height: 30%;
+  min-height: 75px;
+
+  margin-bottom: 10px;
+
+  border: 1px solid #000;
+  border-radius: 5%;
+
+  background-color: #007deb;
+  background-image: url("img/black-linen.png");
+
+  font-size: 82px;
+  line-height: 1;
+  color: #660000;
+  text-align: center;
+
+  transition: box-shadow ease-out .2s;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  &:nth-last-child(-n+4) {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 139, .8);
+  }
+
+  &--active {
+    background-color: #fff;
+    background-image: url("img/brushed-alum.png");
+
+    border-color: #000;
+
+    box-shadow: 0 0 25px rgba(0, 0, 139, .8);
+
+    cursor: default;
+
+    &:hover {
+      box-shadow: 0 0 25px rgba(0, 0, 139, .8);
+    }
+  }
+
+  &--revealed {
+    background-color: #fff;
+    background-image: url("img/brushed-alum.png");
+
+    border-color: #fff;
+
+    cursor: default;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
+
+@media #{$tablet-width} {
+  .card {
+    font-size: 66px;
+  }
+}
+
+@media #{$mobile-width} {
+  .card {
+    width: 30%;
+    height: 20%;
+
+    font-size: 48px;
+
+    &:nth-last-child(4) {
+      margin-bottom: 10px;
+    }
+  }
+}

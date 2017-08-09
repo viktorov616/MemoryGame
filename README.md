@@ -1,6 +1,6 @@
 # MemoryGame
 
-Flip over the two cards, if they are the same - they reveals, if not - flip back. The goal of the game is to open all cards.
+Flip over the two cards, if they are the same - they reveals, if not - flip back. The goal of the game is to open all the cards.
 
 [Demo](https://viktorov616.github.io/MemoryGame/)
 
